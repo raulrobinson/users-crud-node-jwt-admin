@@ -1,3 +1,6 @@
+# API REST con Node.js, Express y TypeScript
+
+Este proyecto es una API REST construida con Node.js, Express y TypeScript. Incluye funcionalidades de autenticación utilizando JSON Web Tokens (JWT) y manejo de contraseñas con bcryptjs.
 
 ### Instalacion de dependencias
 ```bash
@@ -16,3 +19,6 @@ node_modules/
 git rm -r --cached node_modules
 git commit -m "Remove node_modules from repo"
 ```
+
+### Author: Raul Robinson Bolivar Navas
+### License: MIT
