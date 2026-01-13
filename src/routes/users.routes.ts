@@ -1,6 +1,5 @@
 import { Router } from "express";
 import { users } from "../store/users.store";
-import { v4 as uuid } from "uuid";
 import bcrypt from "bcryptjs";
 import { authMiddleware } from "../middleware/auth.middleware";
 import { User } from "../models/user.model";
@@ -25,7 +24,7 @@ router.post("/", (req, res) => {
     const { username, firstname, lastname, email, password } = req.body;
 
     const user = {
-        id: uuid(),
+        id: crypto.randomUUID(),
         username,
         firstname,
         lastname,
